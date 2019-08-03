@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+.jumbotron{
+	font-family: 'Kaushan Script', cursive;
+	color: #030303;
+	text-align:center;
+	Background-color:#D3F4CB;
+}
+footer .jumbotron{
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+}
+.topbar{
+	font-family: 'Yesteryear', cursive;
+	font-size:30%;
+	
+}

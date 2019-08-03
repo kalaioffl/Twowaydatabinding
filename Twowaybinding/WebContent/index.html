@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Two way Binding</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" />
+<script src="script.js"></script>
+</head>
+<body>
+<header> <div class="jumbotron">
+  <h1 class="display-4">Two way Binding</h1>
+</div></header>
+<div ng-app ="myModule">
+<div ng-controller ="myController">
+<p style= "font-family:'Yesteryear', cursive";>Change the name inside the input field</p>
+<table>
+<tr>
+<td>First Name :</td>
+<td><input type="text" ng-model="employee.firstName"/>
+</td>
+</tr>
+
+<tr>
+<td>Last Name :</td>
+<td><input type="text" ng-model="employee.lastName"/>
+</td>
+</tr>
+
+<tr>
+<td>Gender :</td>
+<td><input type="text" ng-model="employee.gender"/>
+</td>
+</tr>
+
+
+</table><br />
+<table>
+<tr>
+<td>First Name :</td>
+<td>{{ employee.firstName }}
+</td>
+</tr>
+
+<tr>
+<td>Last Name :</td>
+<td>{{ employee.lastName }}
+</td>
+</tr>
+
+<tr>
+<td>Gender :</td>
+<td>{{ employee.gender }}
+</td>
+</tr>
+
+
+</table>
+</div>
+
+
+</div>
+ <footer><header> <div class="jumbotron">
+  <h1 class="display-4">&copy angularjs</h1>
+</div>
+ </footer>
+</body>
+</html>
